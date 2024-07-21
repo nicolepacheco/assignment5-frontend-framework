@@ -12,7 +12,8 @@
   margin-right: 12px;
 }
 
-.bg-sidebar {
+.bg-sidebar.navbar {
+  align-items: stretch;
   background-color: #363740;
 }
 
@@ -22,7 +23,7 @@
   bottom: 0;
   left: 0;
   z-index: 100;
-  padding: 96px 0 0;
+  padding: 122px 0 0;
   background-color: #363740;
 }
 .sidebar .nav-item {
@@ -46,6 +47,57 @@
 }
 .sidebar hr {
   background-color: #DFE0EB;
+}
+
+.content-header {
+  display: flex;
+  flex-direction: row;
+  flex: 1 auto;
+  background-color: #F7F8FC;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+.content-header h2.title {
+  margin: 0;
+  font-weight: 700;
+  font-family: "Mulish", sans-serif;
+  font-size: 24px;
+  color: #252733;
+  letter-spacing: 0.3px;
+}
+.content-header .content-header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+.content-header .content-header-right .header-icons {
+  color: #C5C7CD;
+  font-size: 13px;
+  display: flex;
+  gap: 24px;
+}
+.content-header .content-header-right .vertical-line {
+  background-color: #DFE0EB;
+  height: 32px;
+  width: 1px;
+}
+.content-header .content-header-right .user-container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.content-header .content-header-right .user-container h3.user-name {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+.content-header .content-header-right .user-container .user-icon {
+  font-size: 44px;
 }
 
 /*# sourceMappingURL=style.css.map */
