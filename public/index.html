@@ -35,7 +35,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="content-header navbar-item">
-            <h2 class="title">Overview</h2>
+            <h1 class="title">Overview</h1>
             <div class="content-header-right">
                 <div class="header-icons">
                     <em class="fa-solid fa-magnifying-glass"></em>
@@ -147,22 +147,39 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Dashboard</h1>
-                    <div class="btn-toolbar mb-2 mb-md-0">
-                        <div class="btn-group me-2">
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+                <div class="todays-trends row">
+                    <div class="graph-container col-12 col-lg-8">
+                        <div
+                            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2">
+                            <h2 class="graph-title">Today's trends</h2>
                         </div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
-                            <em class="fa fa-calendar"></em>
-                            This week
-                        </button>
+                        <p class="graph-date">as of 25 May 2019, 09:41 PM</p>
+
+                        <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+                    </div>
+                    <div class="additional-info-container col-12 col-lg-4">
+                        <div class="addtiional-info-card">
+                            <h3 class="addtiional-info-card-title">Resolved</h3>
+                            <p class="addtiional-info-card-text">449</p>
+                        </div>
+                        <div class="addtiional-info-card">
+                            <h3 class="addtiional-info-card-title">Received</h3>
+                            <p class="addtiional-info-card-text">420</p>
+                        </div>
+                        <div class="addtiional-info-card">
+                            <h3 class="addtiional-info-card-title">Average first response time</h3>
+                            <p class="addtiional-info-card-text">33m</p>
+                        </div>
+                        <div class="addtiional-info-card">
+                            <h3 class="addtiional-info-card-title">Average response time</h3>
+                            <p class="addtiional-info-card-text">3h 8m</p>
+                        </div>
+                        <div class="addtiional-info-card">
+                            <h3 class="addtiional-info-card-title">Resolution within SLA</h3>
+                            <p class="addtiional-info-card-text">94%</p>
+                        </div>
                     </div>
                 </div>
-
-                <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
 
                 <h2>Section title</h2>
                 <div class="table-responsive">

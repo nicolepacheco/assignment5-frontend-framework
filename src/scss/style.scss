@@ -66,7 +66,7 @@ $font-stack: 'Mulish', sans-serif;
     justify-content: space-between;
     padding: 30px;
 
-    h2.title {
+    h1.title {
         margin: 0;
         font-weight: 700;
         font-family: $font-stack;
@@ -121,6 +121,8 @@ main {
 }
 
 .cards-container {
+    margin-bottom: 30px;
+
     .card-title {
         margin-bottom: 12px;
         font-family: $font-stack;
@@ -153,5 +155,65 @@ main {
             }
         }
     }
+}
 
+.todays-trends {
+    background-color: white;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+
+    .graph-container {
+        padding: 32px;
+
+        .graph-title {
+            margin-bottom: 0;
+            font-family: $font-stack;
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 23.85px;
+            letter-spacing: 0.4px;
+            color: #252733;
+        }
+
+        .graph-date {
+            font-family: $font-stack;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.1px;
+            color: #9FA2B4;
+        }
+    }
+
+    .additional-info-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-left: 1px solid #DFE0EB;
+        padding: 0;
+
+        .addtiional-info-card {
+            border-bottom: 1px solid #DFE0EB;
+            padding: 32px 32px 24px 32px;
+
+            .addtiional-info-card-title {
+                font-family: $font-stack;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.3px;
+                color: #9FA2B4;
+            }
+
+            .addtiional-info-card-text {
+                margin: 0;
+                font-family: $font-stack;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 30.12px;
+                letter-spacing: 0.3px;
+                color: #252733;
+            }
+        }
+    }
 }

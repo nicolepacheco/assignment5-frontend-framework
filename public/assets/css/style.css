@@ -58,7 +58,7 @@
   justify-content: space-between;
   padding: 30px;
 }
-.content-header h2.title {
+.content-header h1.title {
   margin: 0;
   font-weight: 700;
   font-family: "Mulish", sans-serif;
@@ -105,6 +105,9 @@ main {
   background-color: #F7F8FC;
 }
 
+.cards-container {
+  margin-bottom: 30px;
+}
 .cards-container .card-title {
   margin-bottom: 12px;
   font-family: "Mulish", sans-serif;
@@ -132,6 +135,60 @@ main {
 .cards-container .card:hover .card-text,
 .cards-container .card:hover .card-title {
   color: #3751FF;
+}
+
+.todays-trends {
+  background-color: white;
+  border: 1px solid #DFE0EB;
+  border-radius: 8px;
+}
+.todays-trends .graph-container {
+  padding: 32px;
+}
+.todays-trends .graph-container .graph-title {
+  margin-bottom: 0;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23.85px;
+  letter-spacing: 0.4px;
+  color: #252733;
+}
+.todays-trends .graph-container .graph-date {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #9FA2B4;
+}
+.todays-trends .additional-info-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-left: 1px solid #DFE0EB;
+  padding: 0;
+}
+.todays-trends .additional-info-container .addtiional-info-card {
+  border-bottom: 1px solid #DFE0EB;
+  padding: 32px 32px 24px 32px;
+}
+.todays-trends .additional-info-container .addtiional-info-card .addtiional-info-card-title {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  color: #9FA2B4;
+}
+.todays-trends .additional-info-container .addtiional-info-card .addtiional-info-card-text {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30.12px;
+  letter-spacing: 0.3px;
+  color: #252733;
 }
 
 /*# sourceMappingURL=style.css.map */
