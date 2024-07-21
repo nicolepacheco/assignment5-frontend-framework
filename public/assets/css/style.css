@@ -100,4 +100,38 @@
   font-size: 44px;
 }
 
+.container-fluid,
+main {
+  background-color: #F7F8FC;
+}
+
+.cards-container .card-title {
+  margin-bottom: 12px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  color: #9FA2B4;
+  letter-spacing: 0.4px;
+  line-height: 23.85px;
+}
+.cards-container .card-text {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50.2px;
+  letter-spacing: 1px;
+  color: #252733;
+}
+.cards-container .card {
+  border: 1px solid #DFE0EB;
+  border-radius: 8px;
+}
+.cards-container .card:hover {
+  border: 1px solid #3751FF;
+}
+.cards-container .card:hover .card-text,
+.cards-container .card:hover .card-title {
+  color: #3751FF;
+}
+
 /*# sourceMappingURL=style.css.map */

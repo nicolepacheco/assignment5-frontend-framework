@@ -114,3 +114,44 @@ $font-stack: 'Mulish', sans-serif;
         }
     }
 }
+
+.container-fluid,
+main {
+    background-color: #F7F8FC;
+}
+
+.cards-container {
+    .card-title {
+        margin-bottom: 12px;
+        font-family: $font-stack;
+        font-weight: 700;
+        font-size: 19px;
+        color: #9FA2B4;
+        letter-spacing: 0.4px;
+        line-height: 23.85px;
+    }
+
+    .card-text {
+        font-family: $font-stack;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 50.2px;
+        letter-spacing: 1px;
+        color: #252733;
+    }
+
+    .card {
+        border: 1px solid #DFE0EB;
+        border-radius: 8px;
+
+        &:hover {
+            border: 1px solid #3751FF;
+
+            .card-text,
+            .card-title {
+                color: #3751FF;
+            }
+        }
+    }
+
+}
