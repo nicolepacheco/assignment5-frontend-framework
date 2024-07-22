@@ -1,26 +1,53 @@
+// Variables
 $font-stack: 'Mulish', sans-serif;
+$color-primary: #252733;
+$color-secondary: #9FA2B4;
+$color-tertiary: #A4A6B3;
+$color-highlight: #DDE2FF;
+$color-background: #F7F8FC;
+$color-sidebar: #363740;
+$color-border: #DFE0EB;
+$color-link: #3751FF;
+$padding-horizontal: 32px;
+$gap-small: 14px;
+$gap-large: 32px;
 
-.navbar-logo {
-    font-family: $font-stack;
-    padding: 32px;
-    font-size: 19px;
-    color: #A4A6B3;
-    text-decoration: none;
+// Mixins
+@mixin flex-center {
     display: flex;
     align-items: center;
+}
+
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+// Global Styles
+body {
+    font-family: $font-stack !important;
+}
+
+// Navbar
+.navbar-logo {
+    @include flex-center;
+    padding: $padding-horizontal;
+    font-size: 19px;
+    color: $color-tertiary;
+    text-decoration: none;
     overflow: hidden;
 
     .logo-img {
-        margin-right: 12px;
+        margin-right: $gap-small;
     }
 }
 
 .bg-sidebar.navbar {
     align-items: stretch;
-    background-color: #363740;
+    background-color: $color-sidebar;
 }
 
-
+// Sidebar
 .sidebar {
     position: fixed;
     top: 0;
@@ -28,58 +55,52 @@ $font-stack: 'Mulish', sans-serif;
     left: 0;
     z-index: 100;
     padding: 122px 0 0;
-    background-color: #363740;
+    background-color: $color-sidebar;
 
     .nav-item {
         height: 56px;
     }
 
     .nav-link {
-        font-family: $font-stack;
         font-weight: 400;
         font-size: 16px;
-        color: #A4A6B3;
+        color: $color-tertiary;
         height: 100%;
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        padding-left: 32px;
+        @include flex-center;
+        gap: $gap-small;
+        padding-left: $padding-horizontal;
 
         &.active {
-            color: #DDE2FF;
-            background-color: rgba($color: #9FA2B4, $alpha: 0.08);
-            border-left: 3px solid #DDE2FF;
+            color: $color-highlight;
+            background-color: rgba($color-secondary, 0.08);
+            border-left: 3px solid $color-highlight;
         }
     }
 
     hr {
-        background-color: #DFE0EB;
+        background-color: $color-border;
     }
 }
 
+// Content Header
 .content-header {
-    display: flex;
+    @include flex-space-between;
     flex-direction: row;
     flex: 1 auto;
-    background-color: #F7F8FC;
-    align-items: center;
-    justify-content: space-between;
+    background-color: $color-background;
     padding: 30px;
 
     h1.title {
         margin: 0;
         font-weight: 700;
-        font-family: $font-stack;
         font-size: 24px;
-        color: #252733;
+        color: $color-primary;
         letter-spacing: 0.3px;
     }
 
     .content-header-right {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 32px;
+        @include flex-center;
+        gap: $gap-large;
 
         .header-icons {
             color: #C5C7CD;
@@ -89,19 +110,17 @@ $font-stack: 'Mulish', sans-serif;
         }
 
         .vertical-line {
-            background-color: #DFE0EB;
+            background-color: $color-border;
             height: 32px;
             width: 1px;
         }
 
         .user-container {
-            display: flex;
-            align-items: center;
-            gap: 14px;
+            @include flex-center;
+            gap: $gap-small;
 
             h3.user-name {
                 margin: 0;
-                font-family: $font-stack;
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 20px;
@@ -115,116 +134,115 @@ $font-stack: 'Mulish', sans-serif;
     }
 }
 
+// Container and Main
 .container-fluid,
 main {
-    background-color: #F7F8FC;
+    background-color: $color-background;
     padding-bottom: 15px;
 }
 
 main {
-    padding-top: 32px;
+    padding-top: $padding-horizontal;
 }
 
+// Cards Container
 .cards-container {
     margin-bottom: 30px;
 
     .card-title {
         margin-bottom: 12px;
-        font-family: $font-stack;
         font-weight: 700;
         font-size: 19px;
-        color: #9FA2B4;
+        color: $color-secondary;
         letter-spacing: 0.4px;
         line-height: 23.85px;
     }
 
     .card-text {
-        font-family: $font-stack;
         font-weight: 700;
         font-size: 40px;
         line-height: 50.2px;
         letter-spacing: 1px;
-        color: #252733;
+        color: $color-primary;
     }
 
     .card {
         cursor: pointer;
-        border: 1px solid #DFE0EB;
+        border: 1px solid $color-border;
         border-radius: 8px;
 
         &:hover {
-            border: 1px solid #3751FF;
+            border: 1px solid $color-link;
 
             .card-text,
             .card-title {
-                color: #3751FF;
+                color: $color-link;
             }
         }
     }
 }
 
+// Today's Trends
 .todays-trends {
     background-color: white;
-    border: 1px solid #DFE0EB;
+    border: 1px solid $color-border;
     border-radius: 8px;
     margin-bottom: 30px;
 
     .graph-container {
-        padding: 32px;
+        padding: $padding-horizontal;
 
         .graph-title {
             margin-bottom: 0;
-            font-family: $font-stack;
             font-weight: 700;
             font-size: 19px;
             line-height: 23.85px;
             letter-spacing: 0.4px;
-            color: #252733;
+            color: $color-primary;
         }
 
         .graph-date {
-            font-family: $font-stack;
             font-weight: 400;
             font-size: 12px;
             line-height: 16px;
             letter-spacing: 0.1px;
-            color: #9FA2B4;
+            color: $color-secondary;
         }
     }
 
     .additional-info-container {
-        display: flex;
+        @include flex-center;
         flex-direction: column;
         text-align: center;
-        border-left: 1px solid #DFE0EB;
+        border-left: 1px solid $color-border;
         padding: 0;
 
         .addtiional-info-card {
-            border-bottom: 1px solid #DFE0EB;
+            border-bottom: 1px solid $color-border;
             padding: 32px 32px 24px 32px;
+            width: 100%;
 
             .addtiional-info-card-title {
-                font-family: $font-stack;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 22px;
                 letter-spacing: 0.3px;
-                color: #9FA2B4;
+                color: $color-secondary;
             }
 
             .addtiional-info-card-text {
                 margin: 0;
-                font-family: $font-stack;
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 30.12px;
                 letter-spacing: 0.3px;
-                color: #252733;
+                color: $color-primary;
             }
         }
     }
 }
 
+// Tickets and Tasks Container
 .tickets-tasks-container {
     .tickets-tasks-body {
         .card-header {
@@ -233,35 +251,30 @@ main {
             border: none;
 
             .title-container {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
+                @include flex-space-between;
                 margin-bottom: 8px;
 
                 .card-title {
                     margin: 0;
-                    font-family: $font-stack;
                     font-weight: 700;
                     font-size: 19px;
                     line-height: 23.85px;
                     letter-spacing: 0.4px;
-                    color: #252733;
+                    color: $color-primary;
                 }
 
                 .card-title-link {
-                    color: #3751FF;
+                    color: $color-link;
                     text-decoration: none;
                 }
             }
 
             .card-subtitle {
-                font-family: $font-stack;
                 font-weight: 400;
                 font-size: 12px;
                 line-height: 16px;
                 letter-spacing: 0.1px;
-                color: #9FA2B4;
+                color: $color-secondary;
 
                 span {
                     font-weight: 600;
@@ -270,7 +283,7 @@ main {
         }
 
         .card-body-list-item {
-            border-bottom: 1px solid #DFE0EB;
+            border-bottom: 1px solid $color-border;
             padding: 20px 32px 18px;
             max-height: 58px;
 
@@ -283,18 +296,15 @@ main {
             }
 
             .card-item-content {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+                @include flex-space-between;
 
                 .card-item-content-title {
                     margin: 0;
-                    font-family: $font-stack;
                     font-weight: 600;
                     font-size: 14px;
                     line-height: 20px;
                     letter-spacing: 0.2px;
-                    color: #252733;
+                    color: $color-primary;
 
                     &.create-task {
                         color: #C5C7CD;
@@ -303,47 +313,43 @@ main {
 
                 .card-item-content-value {
                     margin: 0;
-                    font-family: $font-stack;
                     font-weight: 600;
                     font-size: 14px;
                     line-height: 20px;
                     letter-spacing: 0.2px;
-                    color: #9FA2B4;
+                    color: $color-secondary;
                 }
             }
         }
     }
 }
 
+// Tickets Page
 .tickets-page {
-
     .card-body {
         padding: 0;
-        border: 1px solid #DFE0EB;
+        border: 1px solid $color-border;
         border-radius: 8px;
     }
 
     .card-title-container {
-        display: flex;
-        justify-content: space-between;
+        @include flex-space-between;
         padding: 32px 32px 48px 32px;
 
         .card-title {
             margin: 0;
-            font-family: $font-stack;
             font-weight: 700;
             font-size: 19px;
             line-height: 23.85px;
             letter-spacing: 0.4px;
-            color: #252733;
+            color: $color-primary;
         }
 
         .cart-header-icons {
-            display: flex;
-            gap: 32px;
+            @include flex-center;
+            gap: $gap-large;
 
             span {
-                font-family: $font-stack;
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 20px;
@@ -359,12 +365,11 @@ main {
 
     table {
         th {
-            font-family: $font-stack;
             font-weight: 700;
             font-size: 14px;
             line-height: 17.57px;
             letter-spacing: 0.2px;
-            color: #9FA2B4;
+            color: $color-secondary;
             padding: 0 0 12px 31px;
         }
 
@@ -373,7 +378,7 @@ main {
 
             tr {
                 &:hover {
-                    background-color: rgba($color: #3751FF, $alpha: 0.04);
+                    background-color: rgba($color-link, 0.04);
                 }
             }
         }
@@ -383,16 +388,14 @@ main {
             padding: 24px 31px;
 
             h6 {
-                font-family: $font-stack;
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 20px;
                 letter-spacing: 0.2px;
-                color: #252733;
+                color: $color-primary;
             }
 
             .text-secondary-custom {
-                font-family: $font-stack;
                 font-weight: 400;
                 font-size: 12px;
                 line-height: 16px;

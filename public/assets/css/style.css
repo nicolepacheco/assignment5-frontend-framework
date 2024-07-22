@@ -1,15 +1,18 @@
+body {
+  font-family: "Mulish", sans-serif !important;
+}
+
 .navbar-logo {
-  font-family: "Mulish", sans-serif;
+  display: flex;
+  align-items: center;
   padding: 32px;
   font-size: 19px;
   color: #A4A6B3;
   text-decoration: none;
-  display: flex;
-  align-items: center;
   overflow: hidden;
 }
 .navbar-logo .logo-img {
-  margin-right: 12px;
+  margin-right: 14px;
 }
 
 .bg-sidebar.navbar {
@@ -30,7 +33,6 @@
   height: 56px;
 }
 .sidebar .nav-link {
-  font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #A4A6B3;
@@ -51,24 +53,21 @@
 
 .content-header {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   flex: 1 auto;
   background-color: #F7F8FC;
-  align-items: center;
-  justify-content: space-between;
   padding: 30px;
 }
 .content-header h1.title {
   margin: 0;
   font-weight: 700;
-  font-family: "Mulish", sans-serif;
   font-size: 24px;
   color: #252733;
   letter-spacing: 0.3px;
 }
 .content-header .content-header-right {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 32px;
 }
@@ -90,7 +89,6 @@
 }
 .content-header .content-header-right .user-container h3.user-name {
   margin: 0;
-  font-family: "Mulish", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -115,7 +113,6 @@ main {
 }
 .cards-container .card-title {
   margin-bottom: 12px;
-  font-family: "Mulish", sans-serif;
   font-weight: 700;
   font-size: 19px;
   color: #9FA2B4;
@@ -123,7 +120,6 @@ main {
   line-height: 23.85px;
 }
 .cards-container .card-text {
-  font-family: "Mulish", sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 50.2px;
@@ -154,7 +150,6 @@ main {
 }
 .todays-trends .graph-container .graph-title {
   margin-bottom: 0;
-  font-family: "Mulish", sans-serif;
   font-weight: 700;
   font-size: 19px;
   line-height: 23.85px;
@@ -162,7 +157,6 @@ main {
   color: #252733;
 }
 .todays-trends .graph-container .graph-date {
-  font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -171,6 +165,7 @@ main {
 }
 .todays-trends .additional-info-container {
   display: flex;
+  align-items: center;
   flex-direction: column;
   text-align: center;
   border-left: 1px solid #DFE0EB;
@@ -179,9 +174,9 @@ main {
 .todays-trends .additional-info-container .addtiional-info-card {
   border-bottom: 1px solid #DFE0EB;
   padding: 32px 32px 24px 32px;
+  width: 100%;
 }
 .todays-trends .additional-info-container .addtiional-info-card .addtiional-info-card-title {
-  font-family: "Mulish", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -190,7 +185,6 @@ main {
 }
 .todays-trends .additional-info-container .addtiional-info-card .addtiional-info-card-text {
   margin: 0;
-  font-family: "Mulish", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 30.12px;
@@ -205,14 +199,11 @@ main {
 }
 .tickets-tasks-container .tickets-tasks-body .card-header .title-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
 }
 .tickets-tasks-container .tickets-tasks-body .card-header .title-container .card-title {
   margin: 0;
-  font-family: "Mulish", sans-serif;
   font-weight: 700;
   font-size: 19px;
   line-height: 23.85px;
@@ -224,7 +215,6 @@ main {
   text-decoration: none;
 }
 .tickets-tasks-container .tickets-tasks-body .card-header .card-subtitle {
-  font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -247,12 +237,10 @@ main {
 }
 .tickets-tasks-container .tickets-tasks-body .card-body-list-item .card-item-content {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 .tickets-tasks-container .tickets-tasks-body .card-body-list-item .card-item-content .card-item-content-title {
   margin: 0;
-  font-family: "Mulish", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -264,7 +252,6 @@ main {
 }
 .tickets-tasks-container .tickets-tasks-body .card-body-list-item .card-item-content .card-item-content-value {
   margin: 0;
-  font-family: "Mulish", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -284,7 +271,6 @@ main {
 }
 .tickets-page .card-title-container .card-title {
   margin: 0;
-  font-family: "Mulish", sans-serif;
   font-weight: 700;
   font-size: 19px;
   line-height: 23.85px;
@@ -293,10 +279,10 @@ main {
 }
 .tickets-page .card-title-container .cart-header-icons {
   display: flex;
+  align-items: center;
   gap: 32px;
 }
 .tickets-page .card-title-container .cart-header-icons span {
-  font-family: "Mulish", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -307,7 +293,6 @@ main {
   color: #C5C7CD;
 }
 .tickets-page table th {
-  font-family: "Mulish", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 17.57px;
@@ -326,7 +311,6 @@ main {
   padding: 24px 31px;
 }
 .tickets-page table td h6 {
-  font-family: "Mulish", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
@@ -334,7 +318,6 @@ main {
   color: #252733;
 }
 .tickets-page table td .text-secondary-custom {
-  font-family: "Mulish", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
