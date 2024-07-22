@@ -118,6 +118,7 @@ $font-stack: 'Mulish', sans-serif;
 .container-fluid,
 main {
     background-color: #F7F8FC;
+    padding-bottom: 15px;
 }
 
 .cards-container {
@@ -220,8 +221,6 @@ main {
 }
 
 .tickets-tasks-container {
-    margin-bottom: 30px;
-
     .tickets-tasks-body {
         .card-header {
             background-color: white;

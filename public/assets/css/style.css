@@ -103,6 +103,7 @@
 .container-fluid,
 main {
   background-color: #F7F8FC;
+  padding-bottom: 15px;
 }
 
 .cards-container {
@@ -192,9 +193,6 @@ main {
   color: #252733;
 }
 
-.tickets-tasks-container {
-  margin-bottom: 30px;
-}
 .tickets-tasks-container .tickets-tasks-body .card-header {
   background-color: white;
   padding: 32px 32px 16px 32px;
