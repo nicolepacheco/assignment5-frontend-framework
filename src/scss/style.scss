@@ -144,6 +144,7 @@ main {
     }
 
     .card {
+        cursor: pointer;
         border: 1px solid #DFE0EB;
         border-radius: 8px;
 
@@ -306,6 +307,99 @@ main {
                     color: #9FA2B4;
                 }
             }
+        }
+    }
+}
+
+.tickets-page {
+
+    .card-body {
+        padding: 0;
+        border: 1px solid #DFE0EB;
+        border-radius: 8px;
+    }
+
+    .card-title-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 32px 32px 48px 32px;
+
+        .card-title {
+            margin: 0;
+            font-family: $font-stack;
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 23.85px;
+            letter-spacing: 0.4px;
+            color: #252733;
+        }
+
+        .cart-header-icons {
+            display: flex;
+            gap: 32px;
+
+            span {
+                font-family: $font-stack;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                color: #4B506D;
+
+                .cart-header-icon {
+                    color: #C5C7CD;
+                }
+            }
+        }
+    }
+
+    table {
+        th {
+            font-family: $font-stack;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17.57px;
+            letter-spacing: 0.2px;
+            color: #9FA2B4;
+            padding: 0 0 12px 31px;
+        }
+
+        tbody {
+            cursor: pointer;
+
+            tr {
+                &:hover {
+                    background-color: rgba($color: #3751FF, $alpha: 0.04);
+                }
+            }
+        }
+
+        td {
+            vertical-align: middle;
+            padding: 24px 31px;
+
+            h6 {
+                font-family: $font-stack;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+                color: #252733;
+            }
+
+            .text-secondary-custom {
+                font-family: $font-stack;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                letter-spacing: 0.1px;
+                color: #C5C7CD;
+            }
+        }
+
+        .ticket-user {
+            height: 44px;
+            margin-right: 24px;
         }
     }
 }

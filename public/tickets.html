@@ -114,133 +114,242 @@
 
             <main class="col-md-8 ms-sm-auto col-lg-10 px-md-4">
 
-                <h2>Section title</h2>
-                <div class="table-responsive">
-                    <table class="table table-striped table-sm">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Header</th>
-                                <th scope="col">Header</th>
-                                <th scope="col">Header</th>
-                                <th scope="col">Header</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1,001</td>
-                                <td>random</td>
-                                <td>data</td>
-                                <td>placeholder</td>
-                                <td>text</td>
-                            </tr>
-                            <tr>
-                                <td>1,002</td>
-                                <td>placeholder</td>
-                                <td>irrelevant</td>
-                                <td>visual</td>
-                                <td>layout</td>
-                            </tr>
-                            <tr>
-                                <td>1,003</td>
-                                <td>data</td>
-                                <td>rich</td>
-                                <td>dashboard</td>
-                                <td>tabular</td>
-                            </tr>
-                            <tr>
-                                <td>1,003</td>
-                                <td>information</td>
-                                <td>placeholder</td>
-                                <td>illustrative</td>
-                                <td>data</td>
-                            </tr>
-                            <tr>
-                                <td>1,004</td>
-                                <td>text</td>
-                                <td>random</td>
-                                <td>layout</td>
-                                <td>dashboard</td>
-                            </tr>
-                            <tr>
-                                <td>1,005</td>
-                                <td>dashboard</td>
-                                <td>irrelevant</td>
-                                <td>text</td>
-                                <td>placeholder</td>
-                            </tr>
-                            <tr>
-                                <td>1,006</td>
-                                <td>dashboard</td>
-                                <td>illustrative</td>
-                                <td>rich</td>
-                                <td>data</td>
-                            </tr>
-                            <tr>
-                                <td>1,007</td>
-                                <td>placeholder</td>
-                                <td>tabular</td>
-                                <td>information</td>
-                                <td>irrelevant</td>
-                            </tr>
-                            <tr>
-                                <td>1,008</td>
-                                <td>random</td>
-                                <td>data</td>
-                                <td>placeholder</td>
-                                <td>text</td>
-                            </tr>
-                            <tr>
-                                <td>1,009</td>
-                                <td>placeholder</td>
-                                <td>irrelevant</td>
-                                <td>visual</td>
-                                <td>layout</td>
-                            </tr>
-                            <tr>
-                                <td>1,010</td>
-                                <td>data</td>
-                                <td>rich</td>
-                                <td>dashboard</td>
-                                <td>tabular</td>
-                            </tr>
-                            <tr>
-                                <td>1,011</td>
-                                <td>information</td>
-                                <td>placeholder</td>
-                                <td>illustrative</td>
-                                <td>data</td>
-                            </tr>
-                            <tr>
-                                <td>1,012</td>
-                                <td>text</td>
-                                <td>placeholder</td>
-                                <td>layout</td>
-                                <td>dashboard</td>
-                            </tr>
-                            <tr>
-                                <td>1,013</td>
-                                <td>dashboard</td>
-                                <td>irrelevant</td>
-                                <td>text</td>
-                                <td>visual</td>
-                            </tr>
-                            <tr>
-                                <td>1,014</td>
-                                <td>dashboard</td>
-                                <td>illustrative</td>
-                                <td>rich</td>
-                                <td>data</td>
-                            </tr>
-                            <tr>
-                                <td>1,015</td>
-                                <td>random</td>
-                                <td>tabular</td>
-                                <td>information</td>
-                                <td>text</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="row justify-content-center tickets-page">
+                    <div class="col-12">
+                        <div class="card widget-card border-light shadow-sm">
+                            <div class="card-body">
+                                <div class="card-title-container">
+                                    <h5 class="card-title widget-card-title">All tickets</h5>
+                                    <div class="cart-header-icons">
+                                        <span>
+                                            <em class="cart-header-icon fa-solid fa-arrow-up-wide-short"></em>
+                                            Sort
+                                        </span>
+                                        <span>
+                                            <em class="cart-header-icon fa fa-filter"></em>
+                                            Filter
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table bsb-table-xl text-nowrap align-middle m-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Ticket details</th>
+                                                <th>Customer name</th>
+                                                <th>Date</th>
+                                                <th>Priority</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <em class="ticket-user user-icon fa fa-circle-user"></em>
+                                                        <div>
+                                                            <h6 class="mb-1">Contact Email not Linked</h6>
+                                                            <span class="text-secondary-custom fs-7">Updated 1 day
+                                                                ago</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">Tom Cruise</h6>
+                                                    <span class="text-secondary-custom fs-7">on 24.05.2019</span>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">May 26, 2019</h6>
+                                                    <span class="text-secondary-custom fs-7">6:30 PM</span>
+                                                </td>
+                                                <td><span class="badge rounded-pill bg-danger">HIGH</span></td>
+                                                <td class="text-center">
+                                                    <em class="user-icon fa fa-ellipsis-vertical"></em>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <em class="ticket-user user-icon fa fa-circle-user"></em>
+                                                        <div>
+                                                            <h6 class="mb-1">Adding Images to Featured Posts</h6>
+                                                            <span class="text-secondary-custom fs-7">Updated 1 day
+                                                                ago</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">Matt Damon</h6>
+                                                    <span class="text-secondary-custom fs-7">on 24.05.2019</span>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">May 26, 2019</h6>
+                                                    <span class="text-secondary-custom fs-7">8:00 AM</span>
+                                                </td>
+                                                <td><span class="badge rounded-pill bg-warning">LOW</span></td>
+                                                <td class="text-center">
+                                                    <em class="user-icon fa fa-ellipsis-vertical"></em>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <em class="ticket-user user-icon fa fa-circle-user"></em>
+                                                        <div>
+                                                            <h6 class="mb-1">When will I be charged this month?</h6>
+                                                            <span class="text-secondary-custom fs-7">Updated 1 day
+                                                                ago</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">Robert Downey</h6>
+                                                    <span class="text-secondary-custom fs-7">on 24.05.2019</span>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">May 26, 2019</h6>
+                                                    <span class="text-secondary-custom fs-7">7:30 PM</span>
+                                                </td>
+                                                <td><span class="badge rounded-pill bg-danger">HIGH</span></td>
+                                                <td class="text-center">
+                                                    <em class="user-icon fa fa-ellipsis-vertical"></em>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <em class="ticket-user user-icon fa fa-circle-user"></em>
+                                                        <div>
+                                                            <h6 class="mb-1">Payment not going through</h6>
+                                                            <span class="text-secondary-custom fs-7">Updated 2 days
+                                                                ago</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">Christian Bale</h6>
+                                                    <span class="text-secondary-custom fs-7">on 24.05.2019</span>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">May 25, 2019</h6>
+                                                    <span class="text-secondary-custom fs-7">5:00 PM</span>
+                                                </td>
+                                                <td><span class="badge rounded-pill bg-success">NORMAL</span></td>
+                                                <td class="text-center">
+                                                    <em class="user-icon fa fa-ellipsis-vertical"></em>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <em class="ticket-user user-icon fa fa-circle-user"></em>
+                                                        <div>
+                                                            <h6 class="mb-1">Unable to add replies</h6>
+                                                            <span class="text-secondary-custom fs-7">Updated 2 days
+                                                                ago</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">Henry Cavil</h6>
+                                                    <span class="text-secondary-custom fs-7">on 24.05.2019</span>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">May 25, 2019</h6>
+                                                    <span class="text-secondary-custom fs-7">4:00 PM</span>
+                                                </td>
+                                                <td><span class="badge rounded-pill bg-danger">HIGH</span></td>
+                                                <td class="text-center">
+                                                    <em class="user-icon fa fa-ellipsis-vertical"></em>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <em class="ticket-user user-icon fa fa-circle-user"></em>
+                                                        <div>
+                                                            <h6 class="mb-1">Downtime since last week</h6>
+                                                            <span class="text-secondary-custom fs-7">Updated 3 days
+                                                                ago</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">Chris Evans</h6>
+                                                    <span class="text-secondary-custom fs-7">on 23.05.2019</span>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">May 25, 2019</h6>
+                                                    <span class="text-secondary-custom fs-7">2:00 PM</span>
+                                                </td>
+                                                <td><span class="badge rounded-pill bg-success">NORMAL</span></td>
+                                                <td class="text-center">
+                                                    <em class="user-icon fa fa-ellipsis-vertical"></em>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <em class="ticket-user user-icon fa fa-circle-user"></em>
+                                                        <div>
+                                                            <h6 class="mb-1">Referral Bonus</h6>
+                                                            <span class="text-secondary-custom fs-7">Updated 4 day
+                                                                ago</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">Sam Smith</h6>
+                                                    <span class="text-secondary-custom fs-7">on 22.05.2019</span>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">May 25, 2019</h6>
+                                                    <span class="text-secondary-custom fs-7">11:30 AM</span>
+                                                </td>
+                                                <td><span class="badge rounded-pill bg-warning">LOW</span></td>
+                                                <td class="text-center">
+                                                    <em class="user-icon fa fa-ellipsis-vertical"></em>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <em class="ticket-user user-icon fa fa-circle-user"></em>
+                                                        <div>
+                                                            <h6 class="mb-1">How do I change my password?</h6>
+                                                            <span class="text-secondary-custom fs-7">Updated 6 days
+                                                                ago</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">Steve Rogers</h6>
+                                                    <span class="text-secondary-custom fs-7">on 21.05.2019</span>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mb-1">May 24, 2019</h6>
+                                                    <span class="text-secondary-custom fs-7">1:00 PM</span>
+                                                </td>
+                                                <td><span class="badge rounded-pill bg-success">NORMAL</span></td>
+                                                <td class="text-center">
+                                                    <em class="user-icon fa fa-ellipsis-vertical"></em>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-end">
+                                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>

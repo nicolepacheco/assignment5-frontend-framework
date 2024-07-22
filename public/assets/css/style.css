@@ -127,6 +127,7 @@ main {
   color: #252733;
 }
 .cards-container .card {
+  cursor: pointer;
   border: 1px solid #DFE0EB;
   border-radius: 8px;
 }
@@ -265,6 +266,80 @@ main {
   line-height: 20px;
   letter-spacing: 0.2px;
   color: #9FA2B4;
+}
+
+.tickets-page .card-body {
+  padding: 0;
+  border: 1px solid #DFE0EB;
+  border-radius: 8px;
+}
+.tickets-page .card-title-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 32px 48px 32px;
+}
+.tickets-page .card-title-container .card-title {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23.85px;
+  letter-spacing: 0.4px;
+  color: #252733;
+}
+.tickets-page .card-title-container .cart-header-icons {
+  display: flex;
+  gap: 32px;
+}
+.tickets-page .card-title-container .cart-header-icons span {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #4B506D;
+}
+.tickets-page .card-title-container .cart-header-icons span .cart-header-icon {
+  color: #C5C7CD;
+}
+.tickets-page table th {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17.57px;
+  letter-spacing: 0.2px;
+  color: #9FA2B4;
+  padding: 0 0 12px 31px;
+}
+.tickets-page table tbody {
+  cursor: pointer;
+}
+.tickets-page table tbody tr:hover {
+  background-color: rgba(55, 81, 255, 0.04);
+}
+.tickets-page table td {
+  vertical-align: middle;
+  padding: 24px 31px;
+}
+.tickets-page table td h6 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #252733;
+}
+.tickets-page table td .text-secondary-custom {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #C5C7CD;
+}
+.tickets-page table .ticket-user {
+  height: 44px;
+  margin-right: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
