@@ -141,6 +141,7 @@ main {
   background-color: white;
   border: 1px solid #DFE0EB;
   border-radius: 8px;
+  margin-bottom: 30px;
 }
 .todays-trends .graph-container {
   padding: 32px;
@@ -189,6 +190,83 @@ main {
   line-height: 30.12px;
   letter-spacing: 0.3px;
   color: #252733;
+}
+
+.tickets-tasks-container {
+  margin-bottom: 30px;
+}
+.tickets-tasks-container .tickets-tasks-body .card-header {
+  background-color: white;
+  padding: 32px 32px 16px 32px;
+  border: none;
+}
+.tickets-tasks-container .tickets-tasks-body .card-header .title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.tickets-tasks-container .tickets-tasks-body .card-header .title-container .card-title {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23.85px;
+  letter-spacing: 0.4px;
+  color: #252733;
+}
+.tickets-tasks-container .tickets-tasks-body .card-header .title-container .card-title-link {
+  color: #3751FF;
+  text-decoration: none;
+}
+.tickets-tasks-container .tickets-tasks-body .card-header .card-subtitle {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+  color: #9FA2B4;
+}
+.tickets-tasks-container .tickets-tasks-body .card-header .card-subtitle span {
+  font-weight: 600;
+}
+.tickets-tasks-container .tickets-tasks-body .card-body-list-item {
+  border-bottom: 1px solid #DFE0EB;
+  padding: 20px 32px 18px;
+  max-height: 58px;
+}
+.tickets-tasks-container .tickets-tasks-body .card-body-list-item:last-child {
+  border: none;
+}
+.tickets-tasks-container .tickets-tasks-body .card-body-list-item .form-check {
+  margin: 0;
+}
+.tickets-tasks-container .tickets-tasks-body .card-body-list-item .card-item-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tickets-tasks-container .tickets-tasks-body .card-body-list-item .card-item-content .card-item-content-title {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #252733;
+}
+.tickets-tasks-container .tickets-tasks-body .card-body-list-item .card-item-content .card-item-content-title.create-task {
+  color: #C5C7CD;
+}
+.tickets-tasks-container .tickets-tasks-body .card-body-list-item .card-item-content .card-item-content-value {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #9FA2B4;
 }
 
 /*# sourceMappingURL=style.css.map */
