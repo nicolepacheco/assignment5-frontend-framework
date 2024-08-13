@@ -113,39 +113,7 @@
             </nav>
 
             <main class="col-md-8 ms-sm-auto col-lg-10 px-md-4">
-                <div class="row cards-container">
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title">Unresolved</h5>
-                                <p class="card-text">60</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title">Overdue</h5>
-                                <p class="card-text">16</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title">Open</h5>
-                                <p class="card-text">43</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
-                        <div class="card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title">On hold</h5>
-                                <p class="card-text">64</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row cards-container" id="cards-container">
                 </div>
                 <div class="todays-trends row">
                     <div class="graph-container col-12 col-lg-8">
@@ -157,27 +125,7 @@
 
                         <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
                     </div>
-                    <div class="additional-info-container col-12 col-lg-4">
-                        <div class="addtiional-info-card">
-                            <h3 class="addtiional-info-card-title">Resolved</h3>
-                            <p class="addtiional-info-card-text">449</p>
-                        </div>
-                        <div class="addtiional-info-card">
-                            <h3 class="addtiional-info-card-title">Received</h3>
-                            <p class="addtiional-info-card-text">420</p>
-                        </div>
-                        <div class="addtiional-info-card">
-                            <h3 class="addtiional-info-card-title">Average first response time</h3>
-                            <p class="addtiional-info-card-text">33m</p>
-                        </div>
-                        <div class="addtiional-info-card">
-                            <h3 class="addtiional-info-card-title">Average response time</h3>
-                            <p class="addtiional-info-card-text">3h 8m</p>
-                        </div>
-                        <div class="addtiional-info-card">
-                            <h3 class="addtiional-info-card-title">Resolution within SLA</h3>
-                            <p class="addtiional-info-card-text">94%</p>
-                        </div>
+                    <div class="additional-info-container col-12 col-lg-4" id="additional-info-container">
                     </div>
                 </div>
 
@@ -192,30 +140,7 @@
                                     </div>
                                     <p class="card-subtitle">Group: <span>Support</span></p>
                                 </div>
-                                <div class="card-body-list-item">
-                                    <div class="card-item-content">
-                                        <p class="card-item-content-title">Waiting on Feature Request</p>
-                                        <p class="card-item-content-value">4238</p>
-                                    </div>
-                                </div>
-                                <div class="card-body-list-item">
-                                    <div class="card-item-content">
-                                        <p class="card-item-content-title">Awaiting Customer Response</p>
-                                        <p class="card-item-content-value">1005</p>
-                                    </div>
-                                </div>
-                                <div class="card-body-list-item">
-                                    <div class="card-item-content">
-                                        <p class="card-item-content-title">Awaiting Developer Fix</p>
-                                        <p class="card-item-content-value">914</p>
-                                    </div>
-                                </div>
-                                <div class="card-body-list-item">
-                                    <div class="card-item-content">
-                                        <p class="card-item-content-title">Pending</p>
-                                        <p class="card-item-content-value">281</p>
-                                    </div>
-                                </div>
+                                <div id="unresolved-tickets"></div>
                             </div>
                         </div>
                     </div>
@@ -298,6 +223,7 @@
         integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
         crossorigin="anonymous"></script>
     <script src="./assets/js/dashboard.js"></script>
+    <script src="./assets/js/loadData.js"></script>
 
 </body>
 

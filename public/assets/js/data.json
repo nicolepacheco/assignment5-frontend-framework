@@ -1,0 +1,60 @@
+{
+    "ticketsCount": [
+        {
+            "label": "Unresolved",
+            "value": 60
+        },
+        {
+            "label": "Overdue",
+            "value": 16
+        },
+        {
+            "label": "Open",
+            "value": 43
+        },
+        {
+            "label": "On hold",
+            "value": 64
+        }
+    ],
+    "chartAdditionalInfo": [
+        {
+            "label": "Resolved",
+            "value": 449
+        },
+        {
+            "label": "Received",
+            "value": 420
+        },
+        {
+            "label": "Average first response time",
+            "value": "33m"
+        },
+        {
+            "label": "Average response time",
+            "value": "3h 8m"
+        },
+        {
+            "label": "Resolution within SLA",
+            "value": "94%"
+        }
+    ],
+    "unresolvedData": [
+        {
+            "label": "Waiting on Feature Request",
+            "value": 4238
+        },
+        {
+            "label": "Awaiting Customer Response",
+            "value": 1005
+        },
+        {
+            "label": "Awaiting Developer Fix",
+            "value": 914
+        },
+        {
+            "label": "Pending",
+            "value": 281
+        }
+    ]
+}
